@@ -43,6 +43,17 @@ tips = {
 	defense_excess = {str = {"Boss, we have plenty of defence.\nMight want some mobile units instead.",
 				"Chief, we should build mobile\nunits instead. We already\nhave plenty of defence."}, life = 9, cooldown = 20}
 }
+--Clippy Comments to be added:
+--Commander low health
+--unit stunned, maybe one extra for commander stunned
+--Commander captured
+--Cloaked imp and snitch
+--units on fire
+--placeholder firing
+--funwalker firing
+--high altitude units
+--submerged non amphibious
+--maybe close calls etc, check autospec widget
 
 for name,data in pairs(tips) do
 	data.lastUsed = -10000
