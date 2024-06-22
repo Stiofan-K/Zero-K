@@ -42,6 +42,7 @@ tips = {
 	
 	defense_excess = {str = {"Boss, we have plenty of defence.\nMight want some mobile units instead.",
 				"Chief, we should build mobile\nunits instead. We already\nhave plenty of defence."}, life = 9, cooldown = 20}
+	unit_stunned = {str = {"Well that can't be good...", "Aw shucks", "Fapitals worst nightmare..."},life = 9, cooldown = 20}
 }
 --Clippy Comments to be added:
 --Commander low health
@@ -79,13 +80,13 @@ local canRetreatDefs = {
 	--"tankheavyarty",
 	"jumpassault",
 	"jumpsumo",
-	
+
 	"striderdante",
 	--"striderarty",
 	"striderscorpion",
 	"striderbantha",
 	"striderdetriment",
-	
+
 	"shipheavyarty",
 	"reef",
 }
@@ -105,18 +106,18 @@ local defenseDefs = {
 	"turretimpulse",
 	"turretheavylaser",
 	"turretgauss",
-	
+
 	"turretaalaser",
 	"turretaaclose",
 	"turretaaflak",
 	"turretaafar",
 	"turretaaheavy",
-	
+
 	"turretheavy",
 	"turretantiheavy",
-	
+
 	"turrettorp",
-	
+
 	"staticjammer",
 	"staticshield"
 }
