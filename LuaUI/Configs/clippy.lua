@@ -64,7 +64,7 @@ tips = {
 --Cloaked Unit revealed							()()
 --placeholder firing							()()
 --funwalker firing								()()
---high altitude units							()()	Spring.GetUnitPosition
+--high altitude units							()()	Spring.GetUnitPosition, check a general limit, could also be map specific
 --submerged non amphibious						()()
 --maybe close calls etc, check autospec widget	()()
 
