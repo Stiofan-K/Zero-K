@@ -282,6 +282,13 @@ local function ProcessCommand(unitID, command)
 		end
 	end
 	
+		if tips.unit_stunned.lastUsed > gameframe - tips.unit_stunned.cooldown*30 then
+			MakeTip(unitID, "unit_stunned")
+			return
+		if tips.cloaked_bomb.lastUsed > gameframe - tips.cloaked_bomb.cooldown*30 then
+			if Spring.GetUnitIsCloaked(UnitID) then
+				MakeTip(unitID, "cloaked_bomb")
+	end
 	-- resource tips
 	local eCurr, eStor, ePull, eInco, eExpe, eShar, eSent, eReci = spGetTeamResources(myTeam, "energy")
 	local mCurr, mStor, mPull, mInco, mExpe, mShar, mSent, mReci = spGetTeamResources(myTeam, "metal")

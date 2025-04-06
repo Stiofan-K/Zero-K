@@ -41,8 +41,44 @@ tips = {
 	factory_multiple = {str = {"Sir, we might not need another\nfactory so soon. You can assist your\nfirst factory with constructors."}, life = 10, cooldown = 60, verbosity = 2},
 	
 	defense_excess = {str = {"Boss, we have plenty of defence.\nMight want some mobile units instead.",
-				"Chief, we should build mobile\nunits instead. We already\nhave plenty of defence."}, life = 9, cooldown = 20}
+				"Chief, we should build mobile\nunits instead. We already\nhave plenty of defence."}, life = 9, cooldown = 20},
+
+
+	--funny tips
+	unit_stunned = {str = {"Well that can't be good...", "Aw shucks", "Fapitales worst nightmare..."},life = 5, cooldown = 20},
+	unit_on_fire = {str = {"HOTHOTHOT!", "Does something smell burnt?"},life = 5, cooldown = 20},
+
+
+	--funny unit specific tips
+	cloaked_bomb = {str = {"They'll never see me coming...", "Don't mind me...", "Bursting with excitement!"},life = 5, cooldown = 20}
 }
+
+--It might be good to make a seperate structure for unit specific tips? that includes the UnitDefNames."name" maybe I can just add it
+--Could also run multiple comments at the same time if I remove the return statements
+
+--Funny clippy comments to be added: (should be checked for last)
+--									 	added(),tested()
+--unit stunned									(x)()
+--units on fire									()() idk how to find IsBurning
+
+--Cloaked Units in general						()()
+--Cloaked Unit revealed							()()
+--placeholder firing							()()
+--funwalker firing								()()
+--high altitude units							()()	Spring.GetUnitPosition, check a general limit, could also be map specific
+--submerged non amphibious						()()
+--maybe close calls etc, check autospec widget	()()
+
+
+--Unit Specific comments (needs to be checked forsecond)
+--Cloaked imp snitch and skuttle 				(x)() Maybe add widow, but that may deserve its own
+--0 income windgen								()()
+
+--Commander Specific comments: (needs to be checked for first)
+--Commander low health							()()
+--commander stunned 							()()
+--Commander captured							()()
+
 
 for name,data in pairs(tips) do
 	data.lastUsed = -10000
